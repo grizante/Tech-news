@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="icon" href="./assets/img/logo2.png">
+    <link rel="stylesheet" href="css/comment.css">
+
     <title>Evolução das Metodologias de Desenvolvimento</title>
     <!-- Google Fonts Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -15,13 +17,16 @@
     <header>
         <nav id="nav-bar">
             <div class="logo">
+               
                 <div>
                     <a href="about.html">
                         <img src="./assets/img/logo2.png" alt="logo">
                     </a>
                 </div>
                 <a href="about.html">TECH NEWS</a>
-            </div>
+
+            
+</div>
             <ul class="link-bar">
                 <li><a href="#intro">Introdução</a></li>
                 <li><a href="#chronology">Cronologia</a></li>
@@ -148,6 +153,48 @@
         </section>
     </main>
 
+
+    <section id="comments-section">
+        <div class="comments-header">
+            <h2>Comentários nesta publicação</h2>
+            <button class="comment-button">Escrever um comentário sobre conteúdo</button>
+        </div>
+
+        <div class="comment-box">
+            <div class="comment-avatar">
+                <img src="/src/assets/img/logo2.png" alt="Avatar do usuário" width="50px" height="50px">
+            </div>
+            <div class="comment-content">
+                <p class="comment-author">Kauã Willams <span class="comment-level">Usuario não cadastrado</span></p>
+                <p class="comment-text">
+                    Artigo muito bom! Tirou minhas dúvidas!<br><br>
+                    Parabéns,<br>
+                    Abraços!
+                </p>
+                <p class="comment-time">há 3 dias</p>
+            </div>
+        </div>
+    
+        <div class="comment-box">
+            <div class="comment-avatar">
+                <img src="/src/assets/img/logo2.png" alt="Avatar do usuário" width="50px" height="50px">
+            </div>
+            <div class="comment-content">
+                <p class="comment-author">Vitoria Barbosa <span class="comment-level">Usuario cadastrado</span></p>
+                <p class="comment-text">
+                    Boa noite, estava procurando algo que me inspirasse alguma ideia sobre 
+                    metodologia sobre software, encontrei este belo argumento, parabéns 
+                    pelo post, agora sei onde encontrar explicações sobre vários assuntos, 
+                    valeu!
+                </p>
+                <p class="comment-time">há 1 mês</p>
+            </div>
+    
+            
+        </div>
+    </section>
+
+
     <footer>
         <div class="copyright-footer">
             <p>&copy; Copyright <span id="current-year"></span> | Blog TECH NEWS - Evolução das Metodologias de Desenvolvimento</p>
@@ -157,7 +204,7 @@
                 <i class="material-symbols-outlined" style='color: #fff'>arrow_upward_alt</i>
 			</span>
         </div>
-    </footer>
+    </footer>    
 
     <script src="js/main.js"></script>
     <script src="js/scroll.js"></script>
