@@ -1,3 +1,9 @@
+# Diretório de dependências
+node_modules/
+
+# Cache do npm
+npm-debug.log*
+
 ### IntelliJ IDEA ###
 .idea/
 

@@ -18,7 +18,7 @@ body {
 #nav-bar {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
     height: 9vh;
     background: #02284cd4;
@@ -65,7 +65,7 @@ body {
     color: #b4c2d3;
     padding: 1rem .5rem;
     position: relative;
-    font-size: 1em;
+    font-size: .9em;
 }
 
 #nav-bar .link-bar a:hover {
