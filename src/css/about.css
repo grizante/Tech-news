@@ -1,56 +1,68 @@
 #about {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 #team {
-    margin-top: 5rem;
-    width: 100%;
-    min-height: 85vh;
-    background: #02284cd4;
-    padding: 8%;
-    gap: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 5rem;
+  width: 100%;
+  min-height: 85vh;
+  background: #02284cd4;
+  padding: 8%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #team h3 {
-    width: 50%;
-    font-size: 2em;
-    font-weight: bold;
-    color: #f0ffff;
-    text-align: center;
-    padding: 1rem;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid #f0ffff;
-    font-family: "Oswald", sans-serif;
+  width: 50%;
+  font-size: 2em;
+  font-weight: bold;
+  color: #f0ffff;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #f0ffff;
+  font-family: "Oswald", sans-serif;
 }
 
 #team .about-team {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 60rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 60rem;
 }
 
 .info-team {
-    width: 10rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
 }
 
 .info-team a {
+  color: #f0ffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.info-team p {
     color: #f0ffff;
     font-size: 1rem;
     font-weight: bold;
-}
+  }
 
 .info-team .photo {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-    background: #9dadbe;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: #9dadbe;
+}
+
+.info-team .photo .member-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
