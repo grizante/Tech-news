@@ -15,6 +15,20 @@ body {
     background-size: cover;
 }
 
+#resources .text.ref a {
+    color: #000;
+    text-decoration: none;
+}
+#resources .text.ref a:hover {
+    color: #df3434;
+    text-decoration: underline;
+}
+
+#resources .text.link ul > li {
+    list-style: disc;
+    text-decoration: underline;
+}
+
 #nav-bar {
     position: fixed;
     top: 0;
