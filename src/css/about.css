@@ -1,56 +1,70 @@
 #about {
-    margin-top: 10%;
+	margin-top: 10%;
 }
 
 #team {
-    margin-top: 5rem;
-    width: 100%;
-    min-height: 85vh;
-    background: #02284cd4;
-    padding: 8%;
-    gap: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	margin-top: 3rem;
+	width: 100%;
+	min-height: 85vh;
+	background: #02284cd4;
+	padding: 5%;
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #team h3 {
-    width: 50%;
-    font-size: 2em;
-    font-weight: bold;
-    color: #f0ffff;
-    text-align: center;
-    padding: 1rem;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid #f0ffff;
-    font-family: "Oswald", sans-serif;
+	width: 80%;
+	font-size: 2em;
+	font-weight: bold;
+	color: #b4c2d3;
+	text-align: center;
+	padding: 1rem;
+	margin-bottom: 3rem;
+	border-bottom: 1px solid #f0ffff;
+	font-family: "Oswald", sans-serif;
 }
 
 #team .about-team {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 60rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 3rem;
+	max-width: 70rem;
 }
 
 .info-team {
-    width: 10rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
+	width: 10rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
 }
 
 .info-team a {
-    color: #f0ffff;
-    font-size: 1rem;
-    font-weight: bold;
+	color: #b4c2d3;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.info-team a:hover {
+	color: #fff;
+	text-decoration: underline;
 }
 
 .info-team .photo {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-    background: #9dadbe;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	background: transparent;
+	border: #000000 0.1rem solid;
+	box-shadow: #2c2c2c 1px 1px 10px;
+}
+
+.info-team .photo img {
+	width: 100%;
+	border-radius: 50%;
+	background: #9dadbe;
+	object-fit: cover;
 }
