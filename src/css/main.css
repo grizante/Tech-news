@@ -233,3 +233,56 @@ footer {
 ::-webkit-scrollbar-track {
     background: #022549;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+      font-size: 90%;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+    }
+  
+    h4 {
+      font-size: 1.1rem;
+    }
+  
+    main {
+      padding: 0.5rem;
+    }
+  
+    ul {
+      padding-left: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 80%;
+    }
+  
+    h2 {
+      font-size: 1.25rem;
+    }
+  
+    h3 {
+      font-size: 1.1rem;
+    }
+  
+    h4 {
+      font-size: 1rem;
+    }
+  
+    main {
+      padding: 0.5rem;
+    }
+  
+    .text {
+      margin-bottom: 1rem;
+    }
+  }
