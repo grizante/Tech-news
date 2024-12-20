@@ -68,3 +68,31 @@
 	background: #9dadbe;
 	object-fit: cover;
 }
+
+/*Responsividade*/
+
+@media (max-width: 768px) {
+	.link-bar {
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+  
+	.info-team {
+	  width: calc(50% - 20px); /* Duas colunas por linha */
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.info-team {
+	  width: 100%; /* Uma coluna por linha */
+	}
+  
+	.logo img {
+	  width: 30px;
+	  height: 30px;
+	}
+  
+	.link-bar {
+	  gap: 10px;
+	}
+  }
