@@ -24,6 +24,30 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// Slides simples de referências
+const slider = document.getElementById('slider');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let currentIndex = 0;
+
+function updateSlider() {
+  const slideWidth = slider.clientWidth;
+  slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = Math.max(0, currentIndex - 1);
+  updateSlider();
+});
+
+nextBtn.addEventListener('click', () => {
+  const slides = document.querySelectorAll('.slide');
+  currentIndex = Math.min(slides.length - 1, currentIndex + 1);
+  updateSlider();
+});
+
+
 // Swiper - Slide Timeline
 document.addEventListener('DOMContentLoaded', () => {
   const swiperContainer = document.querySelector('.timeline .swiper-container');
