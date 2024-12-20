@@ -1,0 +1,107 @@
+#resources {
+	text-align: center;
+}
+
+.slider-container {
+	position: relative;
+	overflow: hidden;
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid #b0b0b0;
+	border-radius: 8px;
+}
+
+.slider {
+	display: flex;
+	transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+	flex: 0 0 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+}
+
+.slide h3 {
+	font-family: "Oswald", sans-serif;
+	font-size: 1.2em;
+	color: rgba(10, 13, 51, 0.7);
+}
+
+.slide p {
+	font-size: .9em;
+	color: rgba(10, 13, 51, 0.7);
+}
+
+.slide a {
+	padding: .8rem 2rem;
+	color: #fff;
+	background-color: rgb(44, 90, 139, 70%);
+	font-size: .85em;
+	width: 50%;
+}
+
+.slide a:hover {
+	background: #2c5a8b;
+}
+
+.nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgb(44, 90, 139, 70%);
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.nav.prev:hover, .nav.next:hover {
+	background: #2c5a8b;
+}
+
+.nav.prev {
+	left: 10px;
+}
+
+.nav.next {
+	right: 10px;
+}
+
+.text section {
+	margin: 2rem;
+	padding: 1rem;
+	border-radius: 8px;
+	box-shadow: #2C2C2c 0 1px 2px;
+	background: #dadddc80;
+}
+
+.reference h2 {
+	font-size: 1.1em;
+	padding: 0;
+	color: rgba(10, 13, 51, .6);
+}
+
+.reference .text.ref {
+	padding: 1rem;
+	margin-left: 2rem;
+	font-size: .88em;
+}
+
+.text.link ul > li {
+	text-decoration: underline;
+}
+
+.text.ref a {
+	color: rgba(10, 13, 51, .6);
+	text-decoration: none;
+	font-size: .88em;
+}
+
+.text.ref a:hover {
+	color: #df3434;
+	text-decoration: underline;
+}
