@@ -2,6 +2,7 @@
 	line-height: 1.6;
 	padding: 2rem;
 	background-color: #eeecec;
+	font-size: 90%;
 }
 
 .comments-header {
@@ -80,4 +81,37 @@
 	font-size: .8em;
 	color: #aaa;
 	margin-top: .5rem;
+}
+
+/* Responsividade */
+@media screen and (min-width: 900px) {
+	#comments {
+		font-size: 90%;
+	}
+}
+
+@media (max-width: 900px) {
+	#comments {
+		line-height: 1.4;
+		padding: 5% 2%;
+		font-size: 90%;
+	}
+
+	.comments-header {
+		padding: 1rem;
+	}
+
+	.comment-button {
+		font-size: .6rem;
+	}
+
+	.comment-avatar img {
+		width: 2rem;
+		height: 2rem;
+		margin-right: .5rem;
+	}
+
+	.comment-author {
+		margin-bottom: 0.3rem;
+	}
 }

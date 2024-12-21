@@ -1,6 +1,6 @@
 // Scroll Suave na página
-let menu = document.querySelector('#nav-bar');
-const menuLinks = document.querySelectorAll('a[href^="#"]'); // Seleciona os links de navegação
+let header = document.querySelector('#nav-bar');
+const headerLinks = document.querySelectorAll('a[href^="#"]'); // Seleciona os links de navegação
 
 // Função para calcular a distância do topo da página até o elemento
 function getDistanceFromTheTop(element) {
@@ -9,18 +9,18 @@ function getDistanceFromTheTop(element) {
 }
 
 /**
- * Trata o evento de clique nos links do menu e realiza a rolagem suave até a seção correspondente.
+ * Trata o evento de clique nos links do header e realiza a rolagem suave até a seção correspondente.
  *
- * @param {Event} event - O evento de clique acionado pelo link do menu.
+ * @param {Event} event - O evento de clique acionado pelo link do header.
  */
 function scrollToSection(event) {
   event.preventDefault();
-  const distanceFromTheTop = getDistanceFromTheTop(event.target) - menu.offsetHeight;
+  const distanceFromTheTop = getDistanceFromTheTop(event.target) - header.offsetHeight;
   smoothScrollTo(0, distanceFromTheTop);
 }
 
 // Adiciona um evento de clique a cada link de navegação
-menuLinks.forEach((link) => {
+headerLinks.forEach((link) => {
   link.addEventListener("click", scrollToSection);
 });
 

@@ -70,19 +70,26 @@
 }
 
 /*Responsividade*/
-
 @media (max-width: 768px) {
 	.link-bar {
-	  flex-direction: column;
-	  align-items: flex-start;
+		flex-direction: column;
+		align-items: center;
 	}
-  
+
+	#team {
+		border-radius: 24px;
+	}
+
+	#team .about-team {
+		gap: 2rem;
+	}
+
 	.info-team {
-	  width: calc(50% - 20px); /* Duas colunas por linha */
+		width: calc(50% - 20px); /* Duas colunas por linha */
 	}
-  }
+}
   
-  @media (max-width: 480px) {
+@media (max-width: 480px) {
 	.info-team {
 	  width: 100%; /* Uma coluna por linha */
 	}
@@ -95,4 +102,4 @@
 	.link-bar {
 	  gap: 10px;
 	}
-  }
+}
