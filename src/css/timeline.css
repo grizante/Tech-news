@@ -76,9 +76,9 @@
 }
 
 .timeline .swiper-slide .timeline-text {
-	line-height: 1.8;
+	line-height: 1.7;
 	margin-top: 1rem;
-	font-size: 1.2em;
+	font-size: 1.05em;
 	opacity: 0;
 	transform: translate3d(20px, 0, 0);
 	transition: 0.2s ease 0.6s;
@@ -108,20 +108,20 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-end;
-	gap: 1.5rem;
+	gap: .8rem;
 	position: absolute;
 	left: 0;
 	height: 100%;
-	width: 95%;
+	width: 100%;
 	z-index: 1;
-	font-size: .9em;
+	font-size: 1em;
 	font-style: italic;
 }
 
 .timeline .swiper-pagination::before {
 	content: "";
 	position: absolute;
-	right: 19%;
+	right: 22%;
 	top: 0;
 	bottom: 0;
 	width: 1px;
@@ -132,7 +132,7 @@
 
 /* Estilo das datas */
 .timeline .swiper-pagination-bullet {
-	color: rgba(196, 196, 196, 0.68);
+	color: rgba(255, 255, 255, 0.83);
 	margin: 1rem 0;
 	position: relative;
 	cursor: pointer;
@@ -140,6 +140,7 @@
 	font-size: 1.05em;
 	background: none;
 	text-align: center;
+	font-weight: 300;
 }
 
 /* Adicionar bolinha ao lado das datas */
@@ -147,7 +148,7 @@
 	content: "";
 	position: absolute;
 	top: 50%;
-	left: -27%;
+	left: -3%;
 	width: 10px;
 	height: 10px;
 	background-color: #40b3f7;
@@ -159,7 +160,8 @@
 
 /* Bolinha ativa e destaque */
 .timeline .swiper-pagination-bullet-active {
-	color: #40b3f7; /* Cor laranja para a data selecionada */
+	color: #40b3f7;
+	font-size: 1.15em;
 	font-weight: bold;
 }
 
@@ -180,7 +182,7 @@
 }
 
 .timeline .swiper-button-prev {
-	left: 10px;
+	left: 10%;
 }
 
 .timeline .swiper-button-prev:hover {
@@ -188,8 +190,7 @@
 }
 
 .timeline .swiper-button-next {
-	right: 10px;
-
+	right: 10%;
 }
 
 .timeline .swiper-button-next:hover {
@@ -198,7 +199,8 @@
 
 .timeline .swiper-button-prev::after,
 .timeline .swiper-button-next::after {
-	font-size: 1.5em;
+	font-size: 1.25em;
+	font-weight: bold;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -206,9 +208,18 @@
 	display: flex;
 	align-items: center;
 	margin: 1rem;
-	width: 15%;
+	width: 22%;
 }
 
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet {
+	display: flex;
+	align-items: center;
+	margin: 1rem;
+	width: 22%;
+}
+
+/* Responsividade */
 @media screen and (min-width: 768px) {
 	.timeline .swiper-slide::after {
 		right: -30%;
@@ -223,7 +234,39 @@
 		top: 50%;
 		transform: translateY(-50%);
 		width: 50%;
-		font-size: 1em;
+		font-size: 90%;
+		text-align: right;
+	}
+
+	.timeline .swiper-slide .timeline-title {
+		margin: 0;
+	}
+
+	.timeline .swiper-pagination {
+		display: flex;
+	}
+
+	.timeline .swiper-button-prev,
+	.timeline .swiper-button-next {
+		top: 15%;
+		right: 10%;
+		transform: rotate(90deg) translate(0, 10px);
+	}
+
+	.timeline .swiper-slide::after {
+		right: -30%;
+		bottom: -8%;
+		width: 240px;
+		height: 50%;
+		box-shadow: -230px 0 150px 50vw rgba(0, 0, 0, 0.7);
+	}
+
+	.timeline .swiper-slide-content {
+		right: 30%;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 50%;
+		font-size: 1.05em;
 		text-align: right;
 	}
 
@@ -264,8 +307,8 @@
 	}
 }
 
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1700px) {
+	/* Configurações de sombra específicas */
 	.timeline .swiper-slide::after {
 		right: -20%;
 		bottom: -12%;
@@ -275,6 +318,60 @@
 	}
 
 	.timeline .swiper-slide-content {
-		right: 25%;
+		width: 50%;
+		right: 30%;
+		top: 50%;
+		font-size: 90%;
+	}
+
+	.timeline .swiper-slide .timeline-year {
+		margin-bottom: 1rem;
+	}
+
+	.timeline .swiper-button-prev {
+		top: 10%;
+	}
+
+	.timeline .swiper-button-next {
+		bottom: 10%;
+	}
+
+	.timeline .swiper-pagination {
+		display: flex;
+		font-size: 80%;
+		gap: .5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.timeline .swiper-slide-content {
+		width: 70%;
+		right: 50%;
+		top: 20%;
+		font-size: 80%;
+		text-align: center;
+	}
+
+	.timeline .swiper-slide .timeline-year {
+		margin-bottom: 1rem;
+	}
+
+	.timeline .swiper-slide .timeline-title {
+		margin-bottom: 2rem;
+	}
+
+	/* Remove a paginação */
+	.timeline .swiper-pagination {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.timeline .swiper-slide-content {
+		width: 80%;
+		right: 50%;
+		top: 20%;
+		font-size: 70%;
+		text-align: center;
 	}
 }

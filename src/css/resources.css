@@ -105,3 +105,31 @@
 	color: #df3434;
 	text-decoration: underline;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+	#resources {
+		font-size: 90%;
+	}
+
+	#resources .slide {
+		padding: 2rem;
+	}
+
+	#resources .slide a {
+		width: 100%;
+	}
+
+	#resources .nav {
+		padding: 20px 5px;
+	}
+
+	.text section {
+		margin: .5rem;
+		padding: 1rem;
+	}
+
+	.reference .text.ref {
+		margin-left: 0;
+	}
+}

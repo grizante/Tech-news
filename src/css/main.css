@@ -7,6 +7,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	font-family: "Roboto", sans-serif;
+	font-size: 1em;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 #nav-bar {
 	position: fixed;
 	top: 0;
-	z-index: 10;
+	z-index: 15;
 	width: 100%;
 	height: 9vh;
 	background: #02284cd4;
@@ -30,19 +31,19 @@ body {
 .logo {
 	display: flex;
 	align-items: center;
-	gap: .8rem;
-
+	gap: .5rem;
+	z-index: 2;
 }
 
 .logo > div {
 	width: 3rem;
 	height: 3rem;
 	border-radius: 50%;
-	background: #9dadbe;
 }
 
-.logo > div > a > img {
-	width: 3.1rem;
+.logo img {
+	width: 100%;
+	object-fit: cover;
 	cursor: pointer;
 }
 
@@ -56,13 +57,14 @@ body {
 #nav-bar .link-bar {
 	display: flex;
 	gap: 1.5rem;
+	z-index: 1;
 }
 
 #nav-bar .link-bar li {
 	list-style: none;
 }
 
-#nav-bar .link-bar a {
+.link-bar a {
 	color: #b4c2d3;
 	padding: 1rem .5rem;
 	position: relative;
@@ -88,6 +90,30 @@ body {
 	width: 100%;
 }
 
+/* Estilo do menu hambúrguer */
+.hamburger {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+	gap: 0.3rem;
+	z-index: 15;
+}
+
+.hamburger span {
+	display: block;
+	width: 25px;
+	height: 3px;
+	background: #b4c2d3;
+	border-radius: 5px;
+	transition: all 0.3s;
+}
+
+/* Esconder menu por padrão */
+#menu {
+	display: flex;
+	gap: 1.5rem;
+}
+
 section {
 	margin: 5% 20%;
 	padding: 5% 2%;
@@ -110,6 +136,10 @@ section .text {
 	font-size: 1.05em;
 	line-height: 1.7;
 	font-family: "Roboto", sans-serif;
+}
+
+.text > h3 {
+	font-size: 1.3em;
 }
 
 #home {
@@ -140,6 +170,7 @@ section .text {
 	font-weight: bold;
 	border-radius: 24px;
 	box-shadow: #212121 1px 1px 10px;
+	text-align: center;
 }
 
 .area-top {
@@ -197,54 +228,177 @@ footer {
 }
 
 /* Responsividade */
+@media (min-width: 900px) and (max-width: 1700px) {
+	body {
+		font-size: 95%;
+	}
+
+	footer {
+		font-size: 80%;
+	}
+}
+
+
+@media (max-width: 900px) {
+	section {
+		margin: 5% 10%;
+	}
+
+	body {
+		font-size: 90%;
+	}
+
+	header {
+		font-size: 95%;
+	}
+
+	.link-bar a {
+		padding: 1rem .2rem;
+	}
+
+	.logo a {
+		gap: .2rem;
+	}
+
+	footer {
+		font-size: 90%;
+	}
+}
+
 @media (max-width: 768px) {
-    body {
-      font-size: 90%;
-    }
-  
-    h2 {
-      font-size: 1.5rem;
-    }
-  
-    h3 {
-      font-size: 1.25rem;
-    }
-  
-    h4 {
-      font-size: 1.1rem;
-    }
-  
-    main {
-      padding: 0.5rem;
-    }
-  
-    ul {
-      padding-left: 1rem;
-    }
+	body {
+		font-size: 90%;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	h3 {
+		font-size: 1.25rem;
+	}
+
+	h4 {
+		font-size: 1.1rem;
+	}
+
+	main {
+		padding: 0.5rem;
+	}
+
+	ul {
+		padding-left: 1rem;
+	}
+
+	.hamburger {
+		display: flex;
+	}
+
+	#menu {
+		position: absolute;
+		top: 9vh;
+		right: 0;
+		flex-direction: column;
+		background: #02284cd4;
+		width: 100%;
+		height: calc(100vh - 9vh);
+		transform: translateY(-100%);
+		transition: transform 0.3s ease-in-out;
+		text-align: center;
+		z-index: 10;
+	}
+
+	#menu.active {
+		transform: translateY(0);
+	}
+
+	#menu li {
+		margin: 1rem 0;
+	}
+
+	#menu a {
+		font-size: 1.2em;
+		color: #b4c2d3;
+	}
+
+	.logo > div {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	#menu .logo {
+		font-size: 1.3em;
+	}
+
+	.link-bar {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#home::before {
+		font-size: 2em;
+		text-align: center;
+	}
+
+	section {
+		margin: 0 0 10% 0;
+	}
+
+	.button-top {
+		bottom: 1rem;
+		align-items: center;
+		width: 3rem;
+		height: 3rem;
+		margin-right: -1rem;
+		padding: 1rem;
+		border-radius: 50%;
+		z-index: 1;
+	}
+
+	footer {
+		font-size: 90%;
+	}
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 80%;
   }
-  
-  @media (max-width: 480px) {
-    body {
-      font-size: 80%;
-    }
-  
-    h2 {
-      font-size: 1.25rem;
-    }
-  
-    h3 {
-      font-size: 1.1rem;
-    }
-  
-    h4 {
-      font-size: 1rem;
-    }
-  
-    main {
-      padding: 0.5rem;
-    }
-  
-    .text {
-      margin-bottom: 1rem;
-    }
+
+  h2 {
+    font-size: 1.25rem;
   }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: .5rem;
+  }
+
+  .text {
+    margin-bottom: 1rem;
+  }
+
+  .info-team {
+	  width: 100%; /* Uma coluna por linha */
+  }
+
+  .logo img {
+	  width: 30px;
+	  height: 30px;
+  }
+
+  .link-bar {
+	  gap: 10px;
+  }
+
+  footer {
+	  font-size: 80%;
+  }
+}
