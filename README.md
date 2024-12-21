@@ -1,72 +1,86 @@
-# Blog turma h
+#  📰 · 🌐 · 💻 TECH NEWS: Blog sobre a Evolução das Metodologias de Desenvolvimento
 
-Claro! Aqui está uma divisão de pesquisa sobre a **Evolução das Metodologias de Desenvolvimento** centrada na **Crise do Software** como marco principal. Cada tópico foi pensado para que as pessoas possam trabalhar de forma independente, mas complementar:
+Bem-vindo ao **TECH NEWS**, um blog desenvolvido para explorar a evolução das metodologias de desenvolvimento de software, desde a **Crise do Software** até as tendências mais atuais, como **DevOps** e **Inteligência Artificial**. Este projeto foi iniciado por estudantes de **Engenharia de Software Comercial** como parte da disciplina **História da Engenharia de Software**.
 
----
+## 🚀 Visão Geral do Projeto
 
-### 1. **A Crise do Software: Origem e Impacto**
-   - **Responsável**: Pessoa 1  
-   - **Tópicos a explorar**:  
-     - O que foi a Crise do Software?  
-     - Principais problemas identificados (ex.: projetos atrasados, orçamento estourado, qualidade baixa).  
-     - Exemplo de casos reais que ilustraram o problema (ex.: falhas de software em sistemas críticos).  
-     - Reação inicial da indústria de tecnologia.  
+O TECH NEWS é um blog interativo desenvolvido com:
+- **HTML**: Estrutura e semântica.
+- **CSS**: Design moderno e responsivo.
+- **JavaScript**: Funcionalidades interativas.
+  - **Swiper.js**: Implementação de uma timeline vertical deslizável para organizar a evolução das metodologias.
 
----
-
-### 2. **Metodologias Tradicionais (Década de 60–80): Cascata e Modelos Baseados em Engenharia**
-   - **Responsável**: Pessoa 2  
-   - **Tópicos a explorar**:  
-     - Explicação do modelo de desenvolvimento em cascata (Waterfall).  
-     - Vantagens e limitações dessas metodologias.  
-     - Por que as metodologias tradicionais não resolveram os problemas da Crise do Software?  
-     - Principais casos de sucesso e fracasso com o modelo cascata.  
+Nosso objetivo é criar um ambiente acessível e educativo, tornando conceitos complexos simples para todos os públicos, desde iniciantes até especialistas.<br><br>
 
 ---
 
-### 3. **A Transição para o Pensamento Ágil (1990–2000): Resposta à Crise**
-   - **Responsável**: Pessoa 3  
-   - **Tópicos a explorar**:  
-     - Insatisfação com os modelos tradicionais e surgimento de novas ideias (ex.: iterativo e incremental).  
-     - Manifesto Ágil (2001): como foi criado e os 12 princípios.  
-     - Métodos ágeis populares: Scrum, Kanban, Extreme Programming (XP).  
-     - Como o Ágil trouxe melhorias práticas aos problemas da Crise do Software?  
+## 🖼️ Demonstração
+
+Confira o projeto ao vivo: [**TECH NEWS Blog**](https://blog-grupo-h.vercel.app/index.html)<br><br>
+
+## 📂 Estrutura do Projeto
+
+O projeto segue a seguinte organização:
+[ adicionar estrutura do projeto ]<br><br>
+
+
+## ✨ Funcionalidades
+
+- **Página inicial interativa**: Apresenta a linha do tempo da evolução das metodologias de desenvolvimento.
+- **Timeline vertical deslizável**: Implementada com **Swiper.js**.
+- **Seções temáticas**: Divisão clara por tópicos, como:
+    - Crise do Software.
+    - Metodologias Tradicionais (ex.: Cascata).
+    - Transição para o Pensamento Ágil.
+    - DevOps e Metodologias Modernas.
+    - Tendências Futuras.
+- **Design responsivo**: Adaptado para desktops, tablets e smartphones.<br><br>
 
 ---
 
-### 4. **Metodologias Híbridas: Combinação de Ágil e Modelos Tradicionais**
-   - **Responsável**: Pessoa 4  
-   - **Tópicos a explorar**:  
-     - O que são metodologias híbridas (ex.: Agile-Waterfall)?  
-     - Por que empresas combinam abordagens?  
-     - Exemplos de metodologias híbridas usadas em projetos complexos.  
-     - Limitações e desafios ao combinar modelos.  
+## 📖 Como Executar o Projeto
+
+### Pré-requisitos:
+- Um navegador moderno (Google Chrome, Firefox, Edge).
+- [Git](https://git-scm.com/) para clonar o repositório (opcional).
+
+### Passos:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/grizante/Tech-news.git
+
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd Tech-news
+   
+3. Abra o arquivo index.html no navegador:
+- Em um editor, clique com o botão direito no arquivo e escolha Abrir no Navegador.
+- Ou use extensões como Live Server no VS Code.<br><br>
 
 ---
 
-### 5. **DevOps e a Integração Contínua (2010+): Evolução após o Ágil**
-   - **Responsável**: Pessoa 5  
-   - **Tópicos a explorar**:  
-     - Relação entre DevOps e Metodologias Ágeis.  
-     - Conceitos principais: integração contínua, entrega contínua, automação de processos.  
-     - Impacto do DevOps na qualidade e eficiência de projetos.  
-     - Exemplos de ferramentas e frameworks usados (ex.: Jenkins, Docker, Kubernetes).  
+## 🛠️ Tecnologias Utilizadas
+* **HTML5**: Estrutura semântica e acessível.
+* **CSS3**: Estilização avançada com flexbox, grid e responsividade.
+* **JavaScript**: Funcionalidades dinâmicas e interativas.<br><br>
 
----
 
-### 6. **Tendências Atuais e Futuras em Metodologias de Desenvolvimento**
-   - **Responsável**: Pessoa 6  
-   - **Tópicos a explorar**:  
-     - Surgimento de metodologias como Lean, Design Thinking e SAFe (Scaled Agile Framework).  
-     - Impacto da inteligência artificial no desenvolvimento de software.  
-     - Metodologias para projetos com foco em sustentabilidade e ética.  
-     - Como as empresas podem se preparar para as mudanças futuras?  
+## 🎨 Melhorias Futuras
+* Implementar um sistema de comentários.
+* Criar integração com uma API para gerenciar artigos dinâmicos.<br><br>
 
----
 
-### **Dica para a pesquisa**
-- Use exemplos práticos de projetos reais sempre que possível.  
-- Explore a linha do tempo das mudanças (ex.: década por década) para contextualizar bem.  
-- No final, juntem todas as partes e apresentem como uma visão integrada!  
+## 🤝 Grupo H - Blog TECH NEWS
 
-Se precisar de mais detalhes em algum dos pontos, é só falar. 😉
+- [Davi Maimoni](https://www.linkedin.com/in/davi-maimoni/) 
+- [Isac Grizante](https://www.linkedin.com/in/isacgrizante/) 
+- [João Vitor Vianna](https://www.linkedin.com/in/jo%C3%A3o-vitor-vianna-9a37b3196/) 
+- [Kauã Willams](https://www.linkedin.com/in/kaua-willams/) 
+- [Miller Santiago](https://www.linkedin.com/in/millersantiago/) 
+- [Murillo de Morais](https://www.linkedin.com/in/murillo-de-morais-souza-ab369328a/) 
+- [Vinicius Modesto](https://www.linkedin.com/in/vinicius-modesto-049360261/) 
+- [Vitória Barbosa](https://www.linkedin.com/in/vitoriabarbosaa/)<br><br>
+
+
+## 📝 Licença
+Este projeto está sob a licença MIT. Para mais informações, veja o arquivo [LICENSE](LICENSE).
