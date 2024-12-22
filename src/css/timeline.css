@@ -343,12 +343,12 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.timeline .swiper-slide-content {
 		width: 70%;
 		right: 50%;
 		top: 20%;
-		font-size: 80%;
+		font-size: 88%;
 		text-align: center;
 	}
 
@@ -358,6 +358,10 @@
 
 	.timeline .swiper-slide .timeline-title {
 		margin-bottom: 2rem;
+	}
+
+	.timeline .swiper-slide .timeline-text {
+		font-size: 1.08em;
 	}
 
 	/* Remove a paginação */
@@ -371,7 +375,15 @@
 		width: 80%;
 		right: 50%;
 		top: 20%;
-		font-size: 70%;
+		font-size: 80%;
 		text-align: center;
+	}
+
+	.timeline .swiper-slide .timeline-title {
+		margin-bottom: 1.5rem;
+	}
+
+	.timeline .swiper-slide .timeline-text {
+		font-size: 1.2em;
 	}
 }

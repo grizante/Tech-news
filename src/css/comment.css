@@ -115,3 +115,9 @@
 		margin-bottom: 0.3rem;
 	}
 }
+
+@media (max-width: 480px) {
+	#comments {
+		font-size: 75%;
+	}
+}
